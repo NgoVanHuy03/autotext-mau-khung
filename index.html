@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AutoText · 55 mẫu khung video</title>
-<meta name="description" content="55 mẫu khung video (có 20 mẫu cho kênh nữ) và 10 kiểu logo của AutoText, chụp thẳng từ bộ render.">
+<title>AutoText · 65 mẫu khung video</title>
+<meta name="description" content="65 mẫu khung video (có 30 mẫu cho kênh nữ) và 10 kiểu logo của AutoText, chụp thẳng từ bộ render.">
 <style>
   :root {
     --bg: #0e1015; --panel: #161922; --panel2: #1d2130; --line: #2a2f40; --text: #eef0f5; --muted: #9aa1b2;
@@ -47,6 +47,7 @@
   .num { position: absolute; left: 10px; top: 10px; background: rgba(0,0,0,.72); color: #fff; font-weight: 800; font-size: 13px; border-radius: 8px; padding: 3px 9px; }
   .badge-new { position: absolute; right: 10px; top: 10px; background: var(--new); color: #05231a; font-weight: 800; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; border-radius: 6px; padding: 3px 8px; }
   .badge-new.nu { background: #f4b6c8; color: #4a1d3f; }
+  .badge-new.nu2 { background: #e8b4a0; color: #3a1033; }
   .meta { padding: 12px 14px 14px; display: flex; gap: 10px; align-items: flex-start; flex: 1; }
   .meta .t { flex: 1; min-width: 0; }
   .meta h3 { margin: 0 0 3px; font-size: 16px; }
@@ -99,12 +100,12 @@
 <body>
 <header>
   <div class="wrap">
-    <div class="kicker">AutoText · bản 5.1</div>
-    <h1>55 mẫu khung cho video truyện</h1>
+    <div class="kicker">AutoText · bản 5.2</div>
+    <h1>65 mẫu khung cho video truyện</h1>
     <p class="lead">Mỗi ảnh được chụp thẳng từ bộ render của app nên video xuất ra sẽ giống y như ảnh. Mỗi nhóm dùng chung một dự án mẫu để dễ so sánh. Chọn mẫu nào thì app áp ngay, các chi tiết như vị trí, màu, cỡ chữ vẫn chỉnh tiếp được.</p>
     <div class="stats">
-      <span class="stat"><b>55</b> mẫu khung</span>
-      <span class="stat"><b>20</b> mẫu kênh nữ</span>
+      <span class="stat"><b>65</b> mẫu khung</span>
+      <span class="stat"><b>30</b> mẫu kênh nữ</span>
       <span class="stat"><b>10</b> mẫu mới 5.0</span>
       <span class="stat"><b>10</b> kiểu logo kênh</span>
       <span class="stat">Xuất <b>1080p · 2K · 4K</b></span>
@@ -147,6 +148,7 @@
 
 <script>
 const GROUPS = [
+  ['nu2', 'Kênh nữ · kiểu riêng', '10 kiểu chỉ dành cho kênh nữ, bên nam không có: ảnh trong cửa vòm hoặc khung oval như mặt dây chuyền, ảnh dán xoay nghiêng, thẻ tên hình chiếc lá / ruy băng, phụ đề trên dải ruy băng hoặc có gạch chân, phủ màu mộng mơ, viền mờ, góc khung trang trí.'],
   ['nu', 'Kênh nữ · MOM\'S SWEET REVENGE', '20 mẫu cho truyện nhân vật nữ: hồng đất, tím mận, đỏ rượu vang, kem, oải hương, chữ serif thanh lịch. Ảnh mẫu dùng nhân vật và logo của kênh.'],
   ['moi', 'Mới 5.0', '10 mẫu thêm ở bản 5.0: kính mờ, phim tài liệu, ảnh dán, chat, retro… mỗi mẫu một bố cục riêng.'],
   ['canva', 'Theo mẫu Canva', 'Dựng lại đúng thiết kế Canva của nhóm (5 trang) và các biến thể nhạt hơn.'],
@@ -211,6 +213,16 @@ const TPL = [
   ['nu_mxh', 'Bài đăng sáng', 'nu', 'Ảnh tròn và tên ở góc trên như bài đăng, phụ đề hộp trắng chữ tối.'],
   ['nu_ban_tin', 'Bản tin mận', 'nu', 'Thanh tên mận dài và dòng chữ nền kem kiểu bản tin.'],
   ['nu_toi_gian', 'Tối giản serif', 'nu', 'Chữ serif trên nền mận mờ dần, thẻ tên hồng, nhân vật nhỏ.'],
+  ['nu_cua_vom', 'Cửa vòm', 'nu2', 'Ảnh nhân vật trong khung cửa vòm viền kem, phủ tím mận + viền mờ, thẻ tên chiếc lá.'],
+  ['nu_mat_day', 'Mặt dây chuyền oval', 'nu2', 'Ảnh oval viền vàng như mặt dây chuyền, góc khung vàng, thẻ tên ruy băng, viền tối điện ảnh.'],
+  ['nu_anh_nghieng', 'Ảnh dán nghiêng', 'nu2', 'Thẻ ảnh viền trắng xoay nghiêng như ảnh dán, phụ đề serif có gạch chân hồng, thẻ tên chiếc lá.'],
+  ['nu_ruy_bang', 'Phụ đề ruy băng', 'nu2', 'Phụ đề nằm trên dải ruy băng đỏ mâm xôi hai đầu chữ V, thẻ tên chiếc lá trắng.'],
+  ['nu_mong_mo', 'Mộng mơ phủ hồng', 'nu2', 'Cả khung phủ hồng nhạt, viền mờ trắng kem, chữ tím có quầng sáng, nhân vật viền sáng.'],
+  ['nu_gach_vang', 'Góc vàng · gạch chân', 'nu2', 'Góc khung vàng, viền tối, phụ đề serif kem có gạch chân vàng, thẻ tên ruy băng vàng.'],
+  ['nu_thiep', 'Thiệp mời', 'nu2', 'Như một tấm thiệp: phủ hồng, viền mờ sáng, góc khung hồng, ảnh oval, chữ tím serif.'],
+  ['nu_la_hong', 'Khối tên chiếc lá', 'nu2', 'Khối tên lớn hình chiếc lá màu hồng sen trước nhân vật, phụ đề viền hồng.'],
+  ['nu_vom_nghieng', 'Vòm nghiêng oải hương', 'nu2', 'Cửa vòm xoay nghiêng bên phải, viền mờ tím, phụ đề trên ruy băng oải hương.'],
+  ['nu_vom_lon', 'Cửa sổ vòm lớn', 'nu2', 'Cửa vòm lớn viền trắng dày bên trái, chữ Yeseva viền tím, thẻ tên ruy băng trắng.'],
 ];
 const LOGOS = [['co_dien', 'Cổ điển (mẫu gốc)'], ['khoi_dam', 'Khối đậm'], ['sang_trong', 'Sang trọng'], ['khac_noi', 'Khắc chữ'], ['hien_dai', 'Hiện đại vàng'], ['nhan_do', 'Nhãn đỏ'], ['khung_vien', 'Khung viền'], ['chu_ky', 'Chữ ký'], ['vien_rong', 'Viền rỗng'], ['thanh_doc', 'Thanh dọc']];
 
@@ -235,7 +247,7 @@ function card(t) {
   return `<article class="card${fav.has(k) ? ' fav' : ''}" data-k="${k}">
     <button class="shot" type="button" data-open="${k}" aria-label="Xem to mẫu ${n}">
       <img src="nho/${k}.jpg" alt="Mẫu ${n}: ${esc(name)}" loading="lazy" width="720" height="405" onerror="retryImg(this)">
-      <span class="num">${n}</span>${g === 'moi' ? '<span class="badge-new">Mới</span>' : g === 'nu' ? '<span class="badge-new nu">Kênh nữ</span>' : ''}
+      <span class="num">${n}</span>${g === 'moi' ? '<span class="badge-new">Mới</span>' : g === 'nu' ? '<span class="badge-new nu">Kênh nữ</span>' : g === 'nu2' ? '<span class="badge-new nu2">Nữ · riêng</span>' : ''}
     </button>
     <div class="meta"><div class="t"><h3>${esc(name)}</h3><p>${esc(d)}</p></div>
       <button class="heart${fav.has(k) ? ' on' : ''}" type="button" data-fav="${k}" aria-pressed="${fav.has(k)}" aria-label="Chọn mẫu ${n}">♥</button></div>
