@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AutoText · 35 mẫu khung video</title>
-<meta name="description" content="35 mẫu khung video và 10 kiểu logo của AutoText, chụp thẳng từ bộ render.">
+<title>AutoText · 55 mẫu khung video</title>
+<meta name="description" content="55 mẫu khung video (có 20 mẫu cho kênh nữ) và 10 kiểu logo của AutoText, chụp thẳng từ bộ render.">
 <style>
   :root {
     --bg: #0e1015; --panel: #161922; --panel2: #1d2130; --line: #2a2f40; --text: #eef0f5; --muted: #9aa1b2;
@@ -46,6 +46,7 @@
   .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .num { position: absolute; left: 10px; top: 10px; background: rgba(0,0,0,.72); color: #fff; font-weight: 800; font-size: 13px; border-radius: 8px; padding: 3px 9px; }
   .badge-new { position: absolute; right: 10px; top: 10px; background: var(--new); color: #05231a; font-weight: 800; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; border-radius: 6px; padding: 3px 8px; }
+  .badge-new.nu { background: #f4b6c8; color: #4a1d3f; }
   .meta { padding: 12px 14px 14px; display: flex; gap: 10px; align-items: flex-start; flex: 1; }
   .meta .t { flex: 1; min-width: 0; }
   .meta h3 { margin: 0 0 3px; font-size: 16px; }
@@ -98,12 +99,13 @@
 <body>
 <header>
   <div class="wrap">
-    <div class="kicker">AutoText · bản 5.0</div>
-    <h1>35 mẫu khung cho video truyện</h1>
-    <p class="lead">Mỗi ảnh được chụp thẳng từ bộ render của app nên video xuất ra sẽ giống y như ảnh. Tất cả dùng chung một dự án mẫu để dễ so sánh. Chọn mẫu nào thì app áp ngay, các chi tiết như vị trí, màu, cỡ chữ vẫn chỉnh tiếp được.</p>
+    <div class="kicker">AutoText · bản 5.1</div>
+    <h1>55 mẫu khung cho video truyện</h1>
+    <p class="lead">Mỗi ảnh được chụp thẳng từ bộ render của app nên video xuất ra sẽ giống y như ảnh. Mỗi nhóm dùng chung một dự án mẫu để dễ so sánh. Chọn mẫu nào thì app áp ngay, các chi tiết như vị trí, màu, cỡ chữ vẫn chỉnh tiếp được.</p>
     <div class="stats">
-      <span class="stat"><b>35</b> mẫu khung</span>
-      <span class="stat"><b>10</b> mẫu mới</span>
+      <span class="stat"><b>55</b> mẫu khung</span>
+      <span class="stat"><b>20</b> mẫu kênh nữ</span>
+      <span class="stat"><b>10</b> mẫu mới 5.0</span>
       <span class="stat"><b>10</b> kiểu logo kênh</span>
       <span class="stat">Xuất <b>1080p · 2K · 4K</b></span>
     </div>
@@ -122,7 +124,7 @@
 </section>
 
 <footer>
-  <div class="wrap">Số thứ tự trên trang trùng với thứ tự mẫu trong app (cột phải › Bố cục › Mẫu khung). Ảnh minh họa dùng một dự án mẫu của kênh Alpha Dad.</div>
+  <div class="wrap">Số thứ tự trên trang trùng với thứ tự mẫu trong app (cột phải › Bố cục › Mẫu khung). Nhóm kênh nữ dùng một dự án mẫu của kênh MOM'S SWEET REVENGE (logo chữ trắng nên có lúc chìm trên trời sáng); các nhóm khác dùng một dự án mẫu của kênh Alpha Dad.</div>
 </footer>
 
 <div class="bar" id="bar" role="region" aria-label="Mẫu đã chọn">
@@ -145,7 +147,8 @@
 
 <script>
 const GROUPS = [
-  ['moi', 'Mới', '10 mẫu mới thêm ở bản 5.0: kính mờ, phim tài liệu, ảnh dán, chat, retro… mỗi mẫu một bố cục riêng.'],
+  ['nu', 'Kênh nữ · MOM\'S SWEET REVENGE', '20 mẫu cho truyện nhân vật nữ: hồng đất, tím mận, đỏ rượu vang, kem, oải hương, chữ serif thanh lịch. Ảnh mẫu dùng nhân vật và logo của kênh.'],
+  ['moi', 'Mới 5.0', '10 mẫu thêm ở bản 5.0: kính mờ, phim tài liệu, ảnh dán, chat, retro… mỗi mẫu một bố cục riêng.'],
   ['canva', 'Theo mẫu Canva', 'Dựng lại đúng thiết kế Canva của nhóm (5 trang) và các biến thể nhạt hơn.'],
   ['xuyen', 'Nhìn xuyên cảnh', 'Không có dải tối dày, cảnh nền phía sau vẫn thấy rõ.'],
   ['khac', 'Phong cách khác', 'Podcast ảnh tròn, neon, bút dạ, điện ảnh, bản tin, khối tên…'],
@@ -188,6 +191,26 @@ const TPL = [
   ['khoi_den', 'Khối tên đen · chữ vàng', 'khac', 'Khối tên đen chữ vàng, phụ đề vàng.'],
   ['goc', 'Gốc CapCut (mặc định tool)', 'goc', 'Mẫu CapCut ban đầu của tool.'],
   ['dai_giua', 'Dải giữa (mẫu cũ)', 'goc', 'Dải tối ngang giữa khung, mẫu đầu tiên.'],
+  ['nu_hong', 'Hồng đất · bố cục kênh', 'nu', 'Bố cục quen thuộc của kênh (vạch, thẻ tên, sóng âm) đổi sang hồng đất, dải tím mận.'],
+  ['nu_kinh_hong', 'Kính hồng nổi', 'nu', 'Tấm kính hồng bo góc làm nhòe cảnh sau chữ, thẻ tên viên thuốc màu mận.'],
+  ['nu_tim_man', 'Tím mận mờ dần', 'nu', 'Dải tím mận mờ dần, chữ serif màu kem, thẻ tên hồng vàng.'],
+  ['nu_nhat_ky', 'Trang nhật ký', 'nu', 'Phụ đề serif nâu trên nền giấy kem như trang nhật ký, thẻ tên đỏ rượu.'],
+  ['nu_tiec_tra', 'Tiệc trà · dải kem', 'nu', 'Dải kem sáng, chữ tím mận serif, vạch và thẻ tên hồng đào.'],
+  ['nu_ho_so', 'Hồ sơ · ảnh tròn lớn', 'nu', 'Ảnh tròn lớn viền hồng vàng trên nền mận, tên và phụ đề serif bên cạnh.'],
+  ['nu_the_hong', 'Thẻ ảnh · khung hồng', 'nu', 'Viền hồng quanh video, thẻ ảnh dọc bên phải, phụ đề hộp mận bo tròn.'],
+  ['nu_ben_phai', 'Bảng phải · tài liệu', 'nu', 'Bảng tối mờ dần bên phải, chữ serif lớn, nhân vật lớn bên trái.'],
+  ['nu_vien_hong', 'Chữ trắng viền hồng', 'nu', 'Chữ trắng viền hồng đậm, không dải tối, thẻ tên xiên hồng nhạt.'],
+  ['nu_kinh_tim', 'Kính tím · thẻ viên thuốc', 'nu', 'Dải kính mờ tím tràn khung, chữ serif, thẻ tên viên thuốc nổi.'],
+  ['nu_ruou_vang', 'Điện ảnh rượu vang', 'nu', 'Hai dải điện ảnh màu rượu vang, chữ serif vàng kem trong dải dưới.'],
+  ['nu_chat_hong', 'Tin nhắn hồng', 'nu', 'Ảnh tròn nhỏ, phụ đề trong bong bóng chat hồng.'],
+  ['nu_dai_tren', 'Phụ đề dải trên', 'nu', 'Phụ đề trong dải tím mận ở trên cùng, thẻ tên treo dưới dải, nhân vật đứng tự do.'],
+  ['nu_bang_sang', 'Bảng hồng sáng', 'nu', 'Bảng hồng sáng mờ dần bên trái, chữ tím mận serif, nhân vật lớn bên phải.'],
+  ['nu_khoi_hong', 'Khối tên hồng đất', 'nu', 'Khối tên vuông hồng đất góc trái kiểu Canva trang 5, nhân vật lớn.'],
+  ['nu_retro', 'Retro bóng rượu vang', 'nu', 'Chữ kem có bóng đỏ rượu vang, nhân vật viền hồng như sticker.'],
+  ['nu_oai_huong', 'Kính oải hương sáng', 'nu', 'Tấm kính oải hương sáng, chữ tím đậm serif, thẻ tên tím.'],
+  ['nu_mxh', 'Bài đăng sáng', 'nu', 'Ảnh tròn và tên ở góc trên như bài đăng, phụ đề hộp trắng chữ tối.'],
+  ['nu_ban_tin', 'Bản tin mận', 'nu', 'Thanh tên mận dài và dòng chữ nền kem kiểu bản tin.'],
+  ['nu_toi_gian', 'Tối giản serif', 'nu', 'Chữ serif trên nền mận mờ dần, thẻ tên hồng, nhân vật nhỏ.'],
 ];
 const LOGOS = [['co_dien', 'Cổ điển (mẫu gốc)'], ['khoi_dam', 'Khối đậm'], ['sang_trong', 'Sang trọng'], ['khac_noi', 'Khắc chữ'], ['hien_dai', 'Hiện đại vàng'], ['nhan_do', 'Nhãn đỏ'], ['khung_vien', 'Khung viền'], ['chu_ky', 'Chữ ký'], ['vien_rong', 'Viền rỗng'], ['thanh_doc', 'Thanh dọc']];
 
@@ -212,7 +235,7 @@ function card(t) {
   return `<article class="card${fav.has(k) ? ' fav' : ''}" data-k="${k}">
     <button class="shot" type="button" data-open="${k}" aria-label="Xem to mẫu ${n}">
       <img src="nho/${k}.jpg" alt="Mẫu ${n}: ${esc(name)}" loading="lazy" width="720" height="405" onerror="retryImg(this)">
-      <span class="num">${n}</span>${g === 'moi' ? '<span class="badge-new">Mới</span>' : ''}
+      <span class="num">${n}</span>${g === 'moi' ? '<span class="badge-new">Mới</span>' : g === 'nu' ? '<span class="badge-new nu">Kênh nữ</span>' : ''}
     </button>
     <div class="meta"><div class="t"><h3>${esc(name)}</h3><p>${esc(d)}</p></div>
       <button class="heart${fav.has(k) ? ' on' : ''}" type="button" data-fav="${k}" aria-pressed="${fav.has(k)}" aria-label="Chọn mẫu ${n}">♥</button></div>
