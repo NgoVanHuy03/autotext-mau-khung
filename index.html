@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoText · 35 mẫu khung video</title>
+<meta name="description" content="35 mẫu khung video và 10 kiểu logo của AutoText, chụp thẳng từ bộ render.">
+<style>
+  :root {
+    --bg: #0e1015; --panel: #161922; --panel2: #1d2130; --line: #2a2f40; --text: #eef0f5; --muted: #9aa1b2;
+    --accent: #f6b93b; --new: #3ddc97; --heart: #ff4f7b; --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); background: radial-gradient(1200px 400px at 20% -10%, rgba(246,185,59,.12), transparent 60%), radial-gradient(900px 380px at 90% 0%, rgba(61,220,151,.08), transparent 60%); }
+  .kicker { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { margin: 10px 0 10px; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.12; letter-spacing: -.02em; }
+  .lead { max-width: 760px; color: var(--muted); font-size: 17px; margin: 0; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 14px; color: var(--muted); }
+  .stat b { color: var(--text); }
+  .howto { margin-top: 18px; display: flex; gap: 10px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; max-width: 760px; color: var(--muted); font-size: 14px; }
+  .howto .h { color: var(--heart); font-size: 18px; line-height: 1.2; }
+
+  nav.tabs { position: sticky; top: 0; z-index: 20; background: rgba(14,16,21,.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  nav.tabs .wrap { display: flex; gap: 8px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; scrollbar-width: none; }
+  nav.tabs button { flex: none; border: 1px solid var(--line); background: var(--panel); color: var(--muted); border-radius: 999px; padding: 8px 15px; font: inherit; font-size: 14px; cursor: pointer; white-space: nowrap; }
+  nav.tabs button:hover { color: var(--text); border-color: #3a4157; }
+  nav.tabs button.on { background: var(--accent); border-color: var(--accent); color: #1a1405; font-weight: 700; }
+  nav.tabs button .n { opacity: .7; margin-left: 4px; font-weight: 400; }
+
+  section { padding: 34px 0 10px; }
+  .sec-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  h2 { font-size: 22px; margin: 0; letter-spacing: -.01em; }
+  .sec-note { color: var(--muted); margin: 0 0 18px; font-size: 14px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform .15s ease, border-color .15s ease; }
+  .card:hover { transform: translateY(-2px); border-color: #3a4157; }
+  .card.fav { border-color: var(--heart); box-shadow: 0 0 0 1px var(--heart) inset; }
+  .shot { position: relative; aspect-ratio: 16 / 9; background: #000; cursor: zoom-in; border: 0; padding: 0; display: block; width: 100%; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .num { position: absolute; left: 10px; top: 10px; background: rgba(0,0,0,.72); color: #fff; font-weight: 800; font-size: 13px; border-radius: 8px; padding: 3px 9px; }
+  .badge-new { position: absolute; right: 10px; top: 10px; background: var(--new); color: #05231a; font-weight: 800; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; border-radius: 6px; padding: 3px 8px; }
+  .meta { padding: 12px 14px 14px; display: flex; gap: 10px; align-items: flex-start; flex: 1; }
+  .meta .t { flex: 1; min-width: 0; }
+  .meta h3 { margin: 0 0 3px; font-size: 16px; }
+  .meta p { margin: 0; color: var(--muted); font-size: 13.5px; }
+  .heart { flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel2); color: #6c7387; font-size: 18px; cursor: pointer; display: grid; place-items: center; transition: all .15s ease; }
+  .heart:hover { color: var(--heart); border-color: var(--heart); }
+  .heart.on { background: var(--heart); border-color: var(--heart); color: #fff; }
+
+  .logos { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
+  .logo { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .logo .pic { aspect-ratio: 161 / 71; display: grid; place-items: center; padding: 14px 18px; background: linear-gradient(135deg, #3b4a3a, #6b4a2a 55%, #2a3346); }
+  .logo .pic img { max-width: 100%; max-height: 100%; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
+  .logo .cap { padding: 10px 14px; font-size: 14px; display: flex; justify-content: space-between; color: var(--muted); }
+  .logo .cap b { color: var(--text); font-weight: 600; }
+
+  footer { margin-top: 40px; padding: 26px 0 120px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
+
+  .bar { position: fixed; left: 50%; bottom: 18px; transform: translate(-50%, 140%); z-index: 30; width: min(920px, calc(100% - 24px)); background: #1b1f2c; border: 1px solid #353c52; border-radius: 16px; box-shadow: 0 18px 50px rgba(0,0,0,.55); padding: 12px 14px 12px 18px; display: flex; gap: 14px; align-items: center; transition: transform .25s ease; }
+  .bar.show { transform: translate(-50%, 0); }
+  .bar .lst { flex: 1; min-width: 0; font-size: 14px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar .lst b { color: var(--text); }
+  .btn { border: 0; border-radius: 10px; padding: 10px 16px; font: inherit; font-weight: 700; cursor: pointer; }
+  .btn.pri { background: var(--accent); color: #1a1405; }
+  .btn.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 500; }
+
+  .lb { position: fixed; inset: 0; z-index: 50; background: rgba(5,6,9,.94); display: none; flex-direction: column; align-items: center; justify-content: center; padding: 20px 64px; }
+  .lb.open { display: flex; }
+  .lb img { max-width: 100%; max-height: calc(100vh - 150px); border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.6); background: #000; }
+  .lb .info { margin-top: 14px; display: flex; gap: 14px; align-items: center; max-width: 1100px; width: 100%; }
+  .lb .info .t { flex: 1; }
+  .lb .info h3 { margin: 0; font-size: 18px; }
+  .lb .info p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .lb .x, .lb .pv, .lb .nx { position: absolute; border: 0; background: rgba(255,255,255,.08); color: #fff; width: 46px; height: 46px; border-radius: 50%; font-size: 22px; cursor: pointer; display: grid; place-items: center; }
+  .lb .x:hover, .lb .pv:hover, .lb .nx:hover { background: rgba(255,255,255,.18); }
+  .lb .x { top: 16px; right: 16px; }
+  .lb .pv { left: 10px; top: 50%; transform: translateY(-50%); }
+  .lb .nx { right: 10px; top: 50%; transform: translateY(-50%); }
+  .toast { position: fixed; left: 50%; top: 18px; transform: translateX(-50%); background: var(--new); color: #05231a; font-weight: 700; padding: 10px 16px; border-radius: 10px; z-index: 60; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  .hidden { display: none !important; }
+  @media (max-width: 640px) {
+    .wrap { padding: 0 14px; }
+    header { padding-top: 34px; }
+    .grid { grid-template-columns: 1fr; }
+    .lb { padding: 14px; }
+    .lb .pv, .lb .nx { top: auto; bottom: 18px; transform: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">AutoText · bản 5.0</div>
+    <h1>35 mẫu khung cho video truyện</h1>
+    <p class="lead">Mỗi ảnh được chụp thẳng từ bộ render của app nên video xuất ra sẽ giống y như ảnh. Tất cả dùng chung một dự án mẫu để dễ so sánh. Chọn mẫu nào thì app áp ngay, các chi tiết như vị trí, màu, cỡ chữ vẫn chỉnh tiếp được.</p>
+    <div class="stats">
+      <span class="stat"><b>35</b> mẫu khung</span>
+      <span class="stat"><b>10</b> mẫu mới</span>
+      <span class="stat"><b>10</b> kiểu logo kênh</span>
+      <span class="stat">Xuất <b>1080p · 2K · 4K</b></span>
+    </div>
+    <div class="howto"><span class="h">♥</span><span>Bấm vào ảnh để xem to (dùng phím ← → để lật). Bấm <b>♥</b> ở các mẫu ưng ý, rồi bấm <b>Chép danh sách</b> ở thanh dưới cùng để gửi lại số mẫu đã chọn.</span></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Lọc nhóm mẫu"><div class="wrap" id="tabs"></div></nav>
+
+<main class="wrap" id="main"></main>
+
+<section class="wrap" id="logo-sec">
+  <div class="sec-head"><h2>10 kiểu logo kênh</h2></div>
+  <p class="sec-note">Logo chữ tự vẽ theo tên kênh (ví dụ “Alpha Dad Stories”), đặt ở góc trên phải video.</p>
+  <div class="logos" id="logos"></div>
+</section>
+
+<footer>
+  <div class="wrap">Số thứ tự trên trang trùng với thứ tự mẫu trong app (cột phải › Bố cục › Mẫu khung). Ảnh minh họa dùng một dự án mẫu của kênh Alpha Dad.</div>
+</footer>
+
+<div class="bar" id="bar" role="region" aria-label="Mẫu đã chọn">
+  <div class="lst" id="barList"></div>
+  <button class="btn ghost" id="barClear" type="button">Bỏ chọn</button>
+  <button class="btn pri" id="barCopy" type="button">Chép danh sách</button>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Xem ảnh mẫu">
+  <button class="x" id="lbX" type="button" aria-label="Đóng">✕</button>
+  <button class="pv" id="lbPv" type="button" aria-label="Mẫu trước">‹</button>
+  <button class="nx" id="lbNx" type="button" aria-label="Mẫu sau">›</button>
+  <img id="lbImg" alt="">
+  <div class="info">
+    <div class="t"><h3 id="lbT"></h3><p id="lbD"></p></div>
+    <button class="heart" id="lbH" type="button" aria-label="Chọn mẫu này">♥</button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const GROUPS = [
+  ['moi', 'Mới', '10 mẫu mới thêm ở bản 5.0: kính mờ, phim tài liệu, ảnh dán, chat, retro… mỗi mẫu một bố cục riêng.'],
+  ['canva', 'Theo mẫu Canva', 'Dựng lại đúng thiết kế Canva của nhóm (5 trang) và các biến thể nhạt hơn.'],
+  ['xuyen', 'Nhìn xuyên cảnh', 'Không có dải tối dày, cảnh nền phía sau vẫn thấy rõ.'],
+  ['khac', 'Phong cách khác', 'Podcast ảnh tròn, neon, bút dạ, điện ảnh, bản tin, khối tên…'],
+  ['goc', 'Mẫu gốc', 'Hai mẫu cũ của tool để đối chiếu.'],
+];
+// [khoa, ten, nhom, mo ta] - thu tu = thu tu trong app
+const TPL = [
+  ['canva', 'Mẫu Canva gốc', 'canva', 'Dải tối 60% từ vạch tím xuống đáy, thẻ tên bo góc, logo mờ 80%.'],
+  ['canva_nhat', 'Canva · dải nhạt 30%', 'canva', 'Như mẫu Canva nhưng dải tối nhạt hơn, thấy cảnh rõ hơn.'],
+  ['canva_trong', 'Canva · bỏ dải tối', 'canva', 'Giữ vạch và thẻ tên Canva, bỏ hẳn dải tối; chữ có bóng đổ.'],
+  ['canva_khoi_tim', 'Canva · khối tên tím (trang 5)', 'canva', 'Khối tên vuông màu tím ở góc trái, nhân vật lớn đứng sau.'],
+  ['canva_khoi_xanh', 'Canva · khối tên xanh (trang 3–4)', 'canva', 'Như trang 5 nhưng khối tên xanh đậm.'],
+  ['kinh_mo', 'Kính mờ nổi', 'moi', 'Tấm kính mờ bo góc nổi ở dưới, làm nhòe cảnh ngay sau chữ; thẻ tên trắng.'],
+  ['kinh_toi', 'Kính mờ tối · vạch vàng', 'moi', 'Dải kính mờ tối tràn khung, vạch và thẻ tên vàng.'],
+  ['tai_lieu', 'Phim tài liệu · bảng trái', 'moi', 'Bảng tối mờ dần bên trái, chữ serif kiểu phim tài liệu, nhân vật lớn bên phải.'],
+  ['anh_dan', 'Ảnh dán · khung trắng', 'moi', 'Viền trắng quanh video, ảnh nhân vật dạng thẻ dán, phụ đề trên nền giấy.'],
+  ['chat', 'Tin nhắn chat', 'moi', 'Ảnh tròn nhỏ, phụ đề nằm trong bong bóng chat trắng như đang nhắn tin.'],
+  ['retro', 'Retro pop · bóng hồng', 'moi', 'Chữ serif đậm có bóng hồng, nhân vật viền trắng như sticker.'],
+  ['mxh', 'Kiểu mạng xã hội', 'moi', 'Ảnh và tên ở góc trên như một bài đăng, phụ đề hộp tối ở giữa dưới.'],
+  ['the_anh', 'Thẻ ảnh viền vàng', 'moi', 'Thẻ ảnh dọc viền vàng, dải xanh than, tên chữ serif trên nền vàng.'],
+  ['trang_sang', 'Dải trắng sáng', 'moi', 'Dải trắng sáng ở dưới, chữ xanh đậm, thẻ tên xanh dương.'],
+  ['khung_vang', 'Khung vàng sang trọng', 'moi', 'Viền vàng mảnh quanh video, chữ serif màu kem, thẻ tên viên thuốc vàng.'],
+  ['chi_chu', 'Trong suốt · chỉ chữ', 'xuyen', 'Không dải tối, không thẻ nền: chỉ chữ trắng có bóng.'],
+  ['mo_nhe', 'Mờ dần nhẹ', 'xuyen', 'Dải tối mờ dần không lộ mép, thẻ tên viên thuốc xanh.'],
+  ['the_vien', 'Thẻ viền trắng', 'xuyen', 'Thẻ tên viền trắng trong suốt, không dải tối.'],
+  ['hop_trong', 'Hộp chữ trong', 'xuyen', 'Mỗi dòng phụ đề có hộp tối trong riêng.'],
+  ['vach_manh', 'Vạch mảnh trắng', 'xuyen', 'Một vạch trắng mảnh, thẻ tên trắng chữ đen.'],
+  ['nv_nho', 'Nhân vật nhỏ', 'xuyen', 'Nhân vật nhỏ hơn để lộ cảnh, thẻ tên xanh.'],
+  ['vang_vien', 'Chữ vàng viền đen', 'xuyen', 'Phụ đề vàng viền đen dễ đọc, thẻ tên đỏ xiên.'],
+  ['phai_vien', 'Nhân vật phải · thẻ viền', 'xuyen', 'Nhân vật đứng bên phải, thẻ tên viền trắng.'],
+  ['podcast', 'Podcast · ảnh tròn', 'khac', 'Ảnh nhân vật tròn viền vàng như podcast.'],
+  ['podcast_phai', 'Podcast · ảnh tròn phải', 'khac', 'Ảnh tròn đặt bên phải.'],
+  ['neon_xanh', 'Neon xanh', 'khac', 'Nhân vật và chữ phát sáng xanh.'],
+  ['neon_hong', 'Neon hồng', 'khac', 'Nhân vật và chữ phát sáng hồng.'],
+  ['but_da', 'Bút dạ vàng', 'khac', 'Phụ đề trên nền vàng như tô bút dạ.'],
+  ['khung_den', 'Điện ảnh · khung đen', 'khac', 'Hai dải đen điện ảnh trên và dưới, chữ nằm trong dải dưới.'],
+  ['chu_trai', 'Nhân vật lớn · chữ trái', 'khac', 'Nhân vật lớn bên phải, phụ đề to căn trái.'],
+  ['ban_tin', 'Bản tin 2 tầng', 'khac', 'Kiểu bản tin: thanh tên đỏ và dòng chữ nền trắng.'],
+  ['khoi_vang', 'Khối tên vàng', 'khac', 'Khối tên vàng góc trái kiểu Canva.'],
+  ['khoi_den', 'Khối tên đen · chữ vàng', 'khac', 'Khối tên đen chữ vàng, phụ đề vàng.'],
+  ['goc', 'Gốc CapCut (mặc định tool)', 'goc', 'Mẫu CapCut ban đầu của tool.'],
+  ['dai_giua', 'Dải giữa (mẫu cũ)', 'goc', 'Dải tối ngang giữa khung, mẫu đầu tiên.'],
+];
+const LOGOS = [['co_dien', 'Cổ điển (mẫu gốc)'], ['khoi_dam', 'Khối đậm'], ['sang_trong', 'Sang trọng'], ['khac_noi', 'Khắc chữ'], ['hien_dai', 'Hiện đại vàng'], ['nhan_do', 'Nhãn đỏ'], ['khung_vien', 'Khung viền'], ['chu_ky', 'Chữ ký'], ['vien_rong', 'Viền rỗng'], ['thanh_doc', 'Thanh dọc']];
+
+const $ = s => document.querySelector(s);
+const KEY = 'autotext_mau_chon';
+let fav = new Set(); try { fav = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...fav])); } catch (e) {} };
+const no = k => TPL.findIndex(t => t[0] === k) + 1;
+let filter = 'all', shown = [], cur = -1;
+
+function retryImg(i) { const n = +(i.dataset.r || 0); if (n < 3) { i.dataset.r = n + 1; setTimeout(() => { i.src = i.src.split('?')[0] + '?r=' + (n + 1); }, 400 * (n + 1)); } }
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]); }
+
+function renderTabs() {
+  const count = g => g === 'all' ? TPL.length : g === 'fav' ? fav.size : TPL.filter(t => t[2] === g).length;
+  const tabs = [['all', 'Tất cả'], ...GROUPS.map(g => [g[0], g[1]]), ['fav', '♥ Đã chọn']];
+  $('#tabs').innerHTML = tabs.map(([k, n]) => `<button type="button" data-f="${k}" class="${filter === k ? 'on' : ''}">${n}<span class="n">${count(k)}</span></button>`).join('');
+}
+
+function card(t) {
+  const [k, name, g, d] = t, n = no(k);
+  return `<article class="card${fav.has(k) ? ' fav' : ''}" data-k="${k}">
+    <button class="shot" type="button" data-open="${k}" aria-label="Xem to mẫu ${n}">
+      <img src="nho/${k}.jpg" alt="Mẫu ${n}: ${esc(name)}" loading="lazy" width="720" height="405" onerror="retryImg(this)">
+      <span class="num">${n}</span>${g === 'moi' ? '<span class="badge-new">Mới</span>' : ''}
+    </button>
+    <div class="meta"><div class="t"><h3>${esc(name)}</h3><p>${esc(d)}</p></div>
+      <button class="heart${fav.has(k) ? ' on' : ''}" type="button" data-fav="${k}" aria-pressed="${fav.has(k)}" aria-label="Chọn mẫu ${n}">♥</button></div>
+  </article>`;
+}
+
+function renderMain() {
+  let html = '';
+  if (filter === 'all') {
+    for (const [g, title, note] of GROUPS) {
+      const list = TPL.filter(t => t[2] === g);
+      html += `<section id="g-${g}"><div class="sec-head"><h2>${title}</h2></div><p class="sec-note">${note}</p><div class="grid">${list.map(card).join('')}</div></section>`;
+    }
+    shown = GROUPS.flatMap(([g]) => TPL.filter(t => t[2] === g)).map(t => t[0]);
+  } else {
+    const list = filter === 'fav' ? TPL.filter(t => fav.has(t[0])) : TPL.filter(t => t[2] === filter);
+    const G = GROUPS.find(x => x[0] === filter);
+    const title = filter === 'fav' ? 'Mẫu đã chọn' : G[1], note = filter === 'fav' ? (list.length ? 'Các mẫu bạn đã bấm ♥.' : 'Chưa chọn mẫu nào — bấm ♥ ở mẫu ưng ý.') : G[2];
+    html = `<section><div class="sec-head"><h2>${title}</h2></div><p class="sec-note">${note}</p><div class="grid">${list.map(card).join('')}</div></section>`;
+    shown = list.map(t => t[0]);
+  }
+  $('#main').innerHTML = html;
+  $('#logo-sec').classList.toggle('hidden', filter !== 'all');
+}
+
+function renderBar() {
+  const list = TPL.filter(t => fav.has(t[0]));
+  $('#bar').classList.toggle('show', list.length > 0);
+  $('#barList').innerHTML = `<b>Đã chọn ${list.length} mẫu:</b> ` + list.map(t => `${no(t[0])}. ${esc(t[1])}`).join(' · ');
+}
+
+function toggleFav(k) {
+  fav.has(k) ? fav.delete(k) : fav.add(k);
+  save();
+  document.querySelectorAll(`[data-k="${k}"]`).forEach(c => c.classList.toggle('fav', fav.has(k)));
+  document.querySelectorAll(`[data-fav="${k}"]`).forEach(b => { b.classList.toggle('on', fav.has(k)); b.setAttribute('aria-pressed', fav.has(k)); });
+  if (cur >= 0 && shown[cur] === k) $('#lbH').classList.toggle('on', fav.has(k));
+  renderTabs(); renderBar();
+  if (filter === 'fav') renderMain();
+}
+
+function openLb(k) { cur = shown.indexOf(k); showLb(); $('#lb').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function showLb() {
+  const k = shown[cur], t = TPL.find(x => x[0] === k);
+  $('#lbImg').src = `anh/${k}.jpg`; $('#lbImg').alt = `Mẫu ${no(k)}: ${t[1]}`;
+  $('#lbT').textContent = `${no(k)}. ${t[1]}`; $('#lbD').textContent = t[3];
+  $('#lbH').classList.toggle('on', fav.has(k));
+  [cur - 1, cur + 1].forEach(i => { if (shown[i]) new Image().src = `anh/${shown[i]}.jpg`; });
+}
+function closeLb() { $('#lb').classList.remove('open'); document.body.style.overflow = ''; cur = -1; }
+function step(d) { if (cur < 0) return; cur = (cur + d + shown.length) % shown.length; showLb(); }
+
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 1800); }
+async function copyList() {
+  const list = TPL.filter(t => fav.has(t[0]));
+  const text = 'Mẫu khung AutoText đã chọn:\n' + list.map(t => `${no(t[0])}. ${t[1]}`).join('\n');
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) { const a = document.createElement('textarea'); a.value = text; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove(); }
+  toast('Đã chép danh sách ' + list.length + ' mẫu');
+}
+
+document.addEventListener('click', e => {
+  const f = e.target.closest('[data-f]'); if (f) { filter = f.dataset.f; renderTabs(); renderMain(); window.scrollTo({ top: $('#tabs').getBoundingClientRect().top + scrollY - 0, behavior: 'smooth' }); return; }
+  const h = e.target.closest('[data-fav]'); if (h) { toggleFav(h.dataset.fav); return; }
+  const o = e.target.closest('[data-open]'); if (o) { openLb(o.dataset.open); return; }
+});
+$('#lbX').onclick = closeLb; $('#lbPv').onclick = () => step(-1); $('#lbNx').onclick = () => step(1);
+$('#lbH').onclick = () => toggleFav(shown[cur]);
+$('#lb').addEventListener('click', e => { if (e.target.id === 'lb') closeLb(); });
+document.addEventListener('keydown', e => { if (cur < 0) return; if (e.key === 'Escape') closeLb(); if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1); });
+let tx = 0; $('#lb').addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+$('#lb').addEventListener('touchend', e => { const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) step(d < 0 ? 1 : -1); });
+$('#barCopy').onclick = copyList;
+$('#barClear').onclick = () => { fav.clear(); save(); renderTabs(); renderMain(); renderBar(); };
+
+$('#logos').innerHTML = LOGOS.map(([k, n], i) => `<div class="logo"><div class="pic"><img src="logo/${k}.png" alt="Logo kiểu ${esc(n)}" onerror="retryImg(this)"></div><div class="cap"><b>${esc(n)}</b><span>${i + 1}</span></div></div>`).join('');
+renderTabs(); renderMain(); renderBar();
+</script>
+</body>
+</html>
